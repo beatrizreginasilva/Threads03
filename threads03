@@ -1,0 +1,27 @@
+package SOI3;
+
+public class EX03 {
+
+    private int numero;
+    private int[] vetor;
+
+    public ThreadVetor(int numero, int[] vetor) {
+        this.numero = numero;
+        this.vetor = vetor;
+    }
+
+    @Override
+    public void run() {
+        long startTime = System.nanoTime();
+        if (numero % 2 == 0) {
+            for (int i = 0; i < vetor.length; i++) {
+            }
+        } else {
+            for (int num : vetor) {
+            }
+        }
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime) / 1_000_000_000; 
+        System.out.println("Thread " + numero + " - Tempo: " + duration + " segundos");
+    }
+}
