@@ -10,7 +10,6 @@ public class EX03 {
         this.vetor = vetor;
     }
 
-    @Override
     public void run() {
         long startTime = System.nanoTime();
         if (numero % 2 == 0) {
